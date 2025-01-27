@@ -1,0 +1,365 @@
+{
+	"info": {
+		"_postman_id": "bd4a5c9f-afdf-4040-b9d2-bae42e820cab",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32362351"
+	},
+	"item": [
+		{
+			"name": "CreateClass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Gym\",\r\n  \"startDate\": \"2025-12-01\",\r\n  \"endDate\": \"2025-12-03\",\r\n  \"startTime\": \"14:00\",\r\n  \"duration\": 60,\r\n  \"capacity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/classes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"classes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CreateClass",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Gym\",\r\n  \"startDate\": \"2025-12-01\",\r\n  \"endDate\": \"2025-12-03\",\r\n  \"startTime\": \"14:00\",\r\n  \"duration\": 60,\r\n  \"capacity\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/classes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"classes"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Jan 2025 08:50:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Gym\",\n    \"startDate\": \"2025-12-01\",\n    \"endDate\": \"2025-12-03\",\n    \"startTime\": \"14:00:00\",\n    \"duration\": 60,\n    \"capacity\": 2,\n    \"id\": \"dee3c570-2150-4853-b3e9-86cde9f4dfdc\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getAllClasses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Gym\",\r\n  \"startDate\": \"2025-12-01\",\r\n  \"endDate\": \"2025-12-03\",\r\n  \"startTime\": \"14:00\",\r\n  \"duration\": 60,\r\n  \"capacity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/classes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"classes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getAllClasses",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Gym\",\r\n  \"startDate\": \"2025-12-01\",\r\n  \"endDate\": \"2025-12-03\",\r\n  \"startTime\": \"14:00\",\r\n  \"duration\": 60,\r\n  \"capacity\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/classes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"classes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Jan 2025 08:49:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Gym\",\n        \"startDate\": \"2025-12-01\",\n        \"endDate\": \"2025-12-03\",\n        \"startTime\": \"14:00:00\",\n        \"duration\": 60,\n        \"capacity\": 2,\n        \"id\": \"215e2354-6fc4-43c3-bdf6-8c4b61e1163c\"\n    },\n    {\n        \"name\": \"Gym\",\n        \"startDate\": \"2025-12-01\",\n        \"endDate\": \"2025-12-03\",\n        \"startTime\": \"14:00:00\",\n        \"duration\": 60,\n        \"capacity\": 2,\n        \"id\": \"16060d6e-528c-47cc-ad0f-7f01e2d77523\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "createBooking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"memberName\":\"Abhishek\",\r\n    \"classId\":\"215e2354-6fc4-43c3-bdf6-8c4b61e1163c\",\r\n    \"participationDate\":\"2025-12-03\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"bookings"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "createBooking",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memberName\":\"Abhishek\",\r\n    \"classId\":\"215e2354-6fc4-43c3-bdf6-8c4b61e1163c\",\r\n    \"participationDate\":\"2025-12-03\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/bookings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"bookings"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Jan 2025 08:51:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"memberName\": \"Abhishek\",\n    \"classId\": \"215e2354-6fc4-43c3-bdf6-8c4b61e1163c\",\n    \"className\": \"Gym\",\n    \"classStartTime\": \"14:00:00\",\n    \"classDuration\": 60,\n    \"bookingDate\": \"2025-12-03\"\n}"
+				}
+			]
+		},
+		{
+			"name": "bookingSearch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/bookings/search?member=a1&startDate=2025-12-01&endDate=2025-12-02",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"bookings",
+						"search"
+					],
+					"query": [
+						{
+							"key": "member",
+							"value": "a1"
+						},
+						{
+							"key": "startDate",
+							"value": "2025-12-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2025-12-02"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "bookingSearch",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/bookings/search?member=Abhishek&startDate=2025-12-01&endDate=2025-12-03",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"bookings",
+								"search"
+							],
+							"query": [
+								{
+									"key": "member",
+									"value": "Abhishek"
+								},
+								{
+									"key": "startDate",
+									"value": "2025-12-01"
+								},
+								{
+									"key": "endDate",
+									"value": "2025-12-03"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 27 Jan 2025 08:53:03 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"memberName\": \"Abhishek\",\n        \"classId\": \"215e2354-6fc4-43c3-bdf6-8c4b61e1163c\",\n        \"className\": \"Gym\",\n        \"classStartTime\": \"14:00:00\",\n        \"classDuration\": 60,\n        \"bookingDate\": \"2025-12-03\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
